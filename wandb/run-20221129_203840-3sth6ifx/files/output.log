@@ -1,0 +1,15 @@
+torch.Size([8, 200]) torch.Size([8, 200]) torch.Size([8, 200]) torch.Size([8, 3072])
+torch.Size([8, 200]) torch.Size([8, 200]) torch.Size([8, 200]) torch.Size([8, 3072])
+torch.Size([16, 200]) torch.Size([16])
+Traceback (most recent call last):
+  File "main.py", line 66, in <module>
+    train_acc, train_loss = train(args, train_loader, model, optimizer, loss_fn, lr, train_loss_list, correct, total, epoch)
+  File "/home/psboys/private/PMG/trainer/train.py", line 29, in train
+    loss1 = loss_fn(output_1, target) * 1
+  File "/opt/conda/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/conda/lib/python3.8/site-packages/torch/nn/modules/loss.py", line 1163, in forward
+    return F.cross_entropy(input, target, weight=self.weight,
+  File "/opt/conda/lib/python3.8/site-packages/torch/nn/functional.py", line 2996, in cross_entropy
+    return torch._C._nn.cross_entropy_loss(input, target, weight, _Reduction.get_enum(reduction), ignore_index, label_smoothing)
+RuntimeError: "nll_loss_forward_reduce_cuda_kernel_2d_index" not implemented for 'Float'
