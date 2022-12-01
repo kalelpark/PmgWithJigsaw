@@ -1,3 +1,5 @@
 dataset/data
+dataset/__pycache__
 .vscode
 wandb
+models/__pycache__

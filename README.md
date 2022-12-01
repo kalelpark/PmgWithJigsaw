@@ -19,10 +19,6 @@ $sh test.sh
 ## Default
 Default inference. in `python main.py --seed 0 --dataset cub --imgsize 550 --crop 448 --model resnet50 --epochs 300 --batchsize 16 --gpu_ids 0,1`.
 
-## Results
-<!-- <img src = "png/record_valid.png"  style="width:500px;"/>
-<img src = "png/record_valid1.png" style="width:450px;"/> -->
-
 
 ## Datasets
 We implemented to load dataset, so It'll work if you just run it. but, CUB dataset needs to be download.
@@ -70,7 +66,7 @@ We implemented to load dataset, so It'll work if you just run it. but, CUB datas
     title = {Fine-Grained Visual Classification via Progressive Multi-Granularity Training of Jigsaw Patches},
     author = {Wongi Park},
     journal = {GitHub},
-    url = {https://github.com/kalelpark/DeepLearning-for-Tabular-Data},
+    url = {https://github.com/kalelpark/Latest_Progressive-Multi-Granularity-Training-of-Jigsaw-Patches},
     year = {2022},
 }
 ```
